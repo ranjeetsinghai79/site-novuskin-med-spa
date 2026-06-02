@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "medspa",
-  name: "Lumière Med Spa",
-  tagline: "Where Science Meets Beauty.",
-  phone: "(555) 456-7890",
-  phoneHref: "tel:+15554567890",
-  email: "hello@lumieremedspa.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Dublin", "Pleasanton"],
-  license: "CA MED #98765",
-  since: "2015",
-  google_rating: "5.0",
-  review_count: "234",
-  emergency: false,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Novuskin",
+    tagline: "Achieve Your Best Skin Now.",
+    phone: "(877) 668-8756",
+    phoneHref: "tel:+18776688756",
+    email: "info@novuskin.com",
+    address: "3325 W Desert Inn Rd, Las Vegas, NV 89102",
+    city: "Las Vegas",
+    serviceAreas: ["Las Vegas", "Frisco", "Denver"],
+    license: "NV Medical Esthetics License",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "noir",
+    niche: "medspa",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Botox & Fillers",
-    desc: "Natural-looking wrinkle reduction and volume restoration. Board-certified injectors. Results you'll love.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Laser Hair Removal",
-    desc: "Permanent hair reduction on all skin types. 6-session packages with dramatic, lasting results.",
-    urgent: false,
-  },
-  {
-    icon: "droplets",
-    title: "HydraFacial",
-    desc: "Deep cleanse, extract, and hydrate in 30 minutes. Instant glow. Zero downtime. A client favorite.",
-    urgent: false,
-  },
-  {
-    icon: "sun",
-    title: "Chemical Peels",
-    desc: "Resurface and renew with medical-grade peels. Treat acne, hyperpigmentation, and fine lines.",
-    urgent: false,
-  },
-  {
-    icon: "activity",
-    title: "Microneedling",
-    desc: "Stimulate collagen naturally. Treats scars, texture, and signs of aging. PRP add-on available.",
-    urgent: false,
-  },
-  {
-    icon: "star",
-    title: "Body Contouring",
-    desc: "Non-surgical fat reduction and skin tightening. Sculpt your silhouette without surgery or downtime.",
-    urgent: false,
-  },
-],
+    { icon: "sparkles", title: "Acne Treatment", desc: "Target and clear breakouts for smoother, healthier skin.", urgent: false },
+    { icon: "heart", title: "Hydradermabrasion", desc: "Deeply cleanse, exfoliate, and hydrate for a radiant complexion.", urgent: false },
+    { icon: "star", title: "Skin Tightening", desc: "Non-invasive radio frequency to firm and lift sagging skin.", urgent: false },
+    { icon: "scissors", title: "Laser Hair Removal", desc: "Permanent reduction of unwanted hair for silky-smooth skin.", urgent: false },
+    { icon: "zap", title: "Injectables", desc: "Restore volume and smooth wrinkles with expert dermal fillers and neuromodulators.", urgent: false },
+    { icon: "thermometer", title: "Wellness Program", desc: "Personalized plans to optimize your health and vitality from within.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Amanda W.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "My Botox looks so natural — exactly what I wanted. The injector took so much time to understand my goals. I've been coming back every 4 months for 2 years.",
-  },
-  {
-    name: "Priya K.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Laser hair removal changed my life. After 6 sessions, I'm basically hair-free. The staff made me feel comfortable the entire time.",
-  },
-  {
-    name: "Rachel D.",
-    location: "Dublin, CA",
-    stars: 5,
-    text: "Monthly HydraFacials have completely transformed my skin. I get compliments constantly. Worth every single penny.",
-  },
-],
+    { name: "Sarah L.", location: "Las Vegas, NV", stars: 5, text: "I've struggled with acne for years, and Novuskin's treatment has been a game-changer. After just three sessions, my skin is clearer and more confident than ever. The staff is incredibly knowledgeable and made me feel so comfortable throughout the process. Highly recommend!" },
+    { name: "Mark T.", location: "Frisco, TX", stars: 5, text: "The Hydradermabrasion facial at Novuskin is pure bliss! My skin felt incredibly clean and looked so much brighter immediately after. It's become my go-to for a quick refresh before important events. Worth every penny for the glow!" },
+    { name: "Jessica R.", location: "Denver, CO", stars: 5, text: "I was hesitant about injectables, but the team at Novuskin put all my fears at ease. The results are incredibly natural, and I look refreshed, not 'done.' They listened to my concerns and delivered exactly what I wanted. Truly professional and skilled." }
+  ],
 
   trustBadges: [
-  "Board-Certified Providers",
-  "FDA-Approved Treatments",
-  "Medical-Grade Products",
-  "Free Consultations",
-  "Financing Available",
-  "5-Star Rated on Google",
-],
+    "Licensed & Certified Professionals", "Advanced Diagnostic Tools", "Customized Treatment Plans", "Membership Programs Available", "5-Star Client Reviews"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1170,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 11,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 10, label: "Years Experience", suffix: "+", decimals: 0 },
+    { value: 5000, label: "Happy Clients", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI concierge books treatments, answers service questions, and collects reviews via call, text, or WhatsApp. Available 24/7, never a wait."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Expert Practitioners", desc: "Our team consists of highly trained and certified professionals dedicated to your skin health." },
+    { icon: "sparkles", title: "Personalized Care", desc: "We create custom treatment plans tailored to your unique skin concerns and goals." },
+    { icon: "shield-check", title: "Advanced Technology", desc: "Utilizing cutting-edge equipment and techniques for superior results and safety." },
+    { icon: "heart", title: "Comprehensive Services", desc: "From facials to injectables, we offer a full spectrum of aesthetic and wellness treatments." },
+    { icon: "thumbs-up", title: "Client Satisfaction", desc: "Your comfort and satisfaction are our top priorities, ensuring a positive experience every visit." },
+    { icon: "clock", title: "Flexible Scheduling", desc: "We offer convenient appointment times to fit your busy lifestyle." }
+  ],
 
-  formServiceOptions: [
-  "Botox & Fillers",
-  "Laser Hair Removal",
-  "HydraFacial",
-  "Chemical Peels",
-  "Microneedling",
-  "Body Contouring"
-],
+  formServiceOptions: ["Acne Treatment", "Hydradermabrasion", "Skin Tightening", "Laser Hair Removal", "Injectables", "Wellness Program"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
